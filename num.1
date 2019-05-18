@@ -1,0 +1,24 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+	int num[10], a, b, max;
+	max = num[0];
+	for (a = 0; a < 10; a++)
+	{
+		scanf("%d", &num[a]);
+	}
+	for (b = 0; b < 10; b++)
+	{
+		if (max< num[b])
+		{
+			max = num[b];
+		}
+	}
+	printf("其中最大的数是%d", max);
+	printf("\n");
+	system("pause");
+	return 0;
+
+}
